@@ -10,46 +10,8 @@
     </head>
     <body>
         <h1>Pokedex LaunchX</h1>
-        <!--<input type="text" placeholder="pikachu" id="pokeName" name="pokeName"><br>
-        <img src="./pokebola.png" alt="Pokemon" id="pokeImg" width="150px"><br>
-        <button onclick="fetchPokemon()">Cambiar pokemon</button>-->
-
-
-
-
-
-
-
-        <!--
-        <div class="mention">
-            <div>or-yam</div>
-            <div class="links">
-              <a href="https://codepen.io/oryamne" target="_blank">
-                <div class="link-logo codepen"></div>
-              </a>
-              <a href="https://github.com/or-yam" target="_blank">
-                <div class="link-logo github"></div>
-              </a>
-              <a href="https://dev.to/oryam" target="_blank">
-                <div class="link-logo dev"></div>
-              </a>
-              <a href="https://www.linkedin.com/in/oryamne/" target="_blank">
-                <div class="link-logo linkedin"></div>
-              </a>
-            </div>
-          </div>
-        
-          <div class="logo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png"
-              height="100%"
-              alt="logo"
-            />
-          </div>
-          -->
-      
+       
           <div class="search-container">
-            <!--<input id="name-input" type="text" placeholder="Nombre / id" />-->
             <input type="text" placeholder="Nombre / id" id="pokeName" name="pokeName">
             <div id="search-btn" class="ball-container">
               <div class="upper-half-ball"></div>
@@ -67,7 +29,7 @@
               <div class="left-top-container">
                 <svg height="100" width="225" class="left-svg">
                   <polyline
-                    points="0,75 70,75 90,38 224,38"
+                    points="0,75 70,75 90,38 265,38"
                     style="fill: none; stroke: black; stroke-width: 3"
                   />
                 </svg>
@@ -172,18 +134,14 @@
               </div>
               <!-- Top screen -->
               <div class="top-screen-container">
-                <!--<div id="about-screen" class="right-panel-screen">
-                  Height: 70cm Weight: 6.9kg
-                </div>-->
                 <div id="about-screen" class="right-panel-screen">
-                    
-                  </div>
+                </div>
               </div>
               <!-- Blue Buttons -->
               <div class="square-buttons-container">
                 <div class="blue-squares-container">
-                  <div class="blue-square"></div>
-                  <div class="blue-square"></div>
+                  <div class="blue-square" id="type1"></div>
+                  <div class="blue-square" id="type2"></div>
                   <div class="blue-square"></div>
                   <div class="blue-square"></div>
                   <div class="blue-square"></div>
@@ -222,20 +180,11 @@
               </div>
               <!-- Bottom screens -->
               <div class="bottom-screens-container">
-                <!--<div id="type-screen" class="right-panel-screen">grass</div>-->
-                <div id="type-screen" class="right-panel-screen"></div>
-                <!--<div id="id-screen" class="right-panel-screen">#1</div>-->
-                <div id="id-screen" class="right-panel-screen"></div>
+                <div id="height-screen" class="right-panel-screen"></div>
+                <div id="weight-screen" class="right-panel-screen"></div>
               </div>
             </div>
           </div>
-
-
-
-
-
-        
-          
     </body>
     <footer>
         <script src="./pokedexLaunchX.js"></script>

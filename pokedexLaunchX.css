@@ -306,7 +306,6 @@
     background-color: var(--main-screen-bg-color);
     border: solid black 2px;
     border-radius: 5%;
-    /*background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -365,8 +364,8 @@
   }
   
   .green-screen {
-    width: 80px;
-    height: 30px;
+    width: 86px;
+    height: 45px;
     border-radius: 5px;
     border: solid black 2px;
     background-color: #3ab47d;
@@ -512,7 +511,7 @@
     height: 100%;
     width: 50%;
     display: grid;
-    grid-template-rows: 24% repeat(4, 19%);
+    grid-template-rows: 24% repeat(4, 20%);
     border-bottom: solid black 3px;
     border-bottom-right-radius: 10px;
   }
@@ -534,8 +533,8 @@
   }
   .right-panel-screen {
     font-family: 'Press Start 2P', cursive;
-    width: 146px;
-    height: 64px;
+    width: 203px;
+    height: 70px;
     background-color: var(--secondary-screen-bg-color);
     border: solid black 2px;
     border-radius: 4px;
@@ -550,6 +549,10 @@
     line-height: 2;
   }
   
+  #about-screen{
+    font-size: 7px;
+  }
+
   /* square buttons grid */
   .square-buttons-container {
     display: flex;
@@ -558,7 +561,7 @@
   }
   
   .blue-squares-container {
-    width: 146px;
+    width: 203px;
     height: 60px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -569,6 +572,14 @@
     border: black 1.5px solid;
     background-color: var(--square-buttons-color);
     box-shadow: inset -2px -2px #3298cb;
+    width: 93%;
+    height: 93%;
+  }
+
+  #type1, #type2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   
   /* center buttons */
@@ -658,8 +669,9 @@
   }
   
   .bottom-screens-container .right-panel-screen {
-    width: 64px;
-    height: 25px;
+    width: 90px;
+    height: 30px;
+    font-size: 8px;
   }
 
   #logo
@@ -695,37 +707,8 @@
 	{
         display:block;
 	}
-  }
 
-  /*
-  .mention {
-    margin-top: 10px;
-    width: 150px;
-    display: grid;
-    text-align: center;
-    font-size: x-large;
+    .left-svg{
+        width: 265px;
+    }
   }
-  .links {
-    display: flex;
-    justify-content: space-between;
-  }
-  .link-logo {
-    width: 25px;
-    height: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .codepen {
-    background-image: url(https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png);
-  }
-  .github {
-    background-image: url(https://cdn-icons-png.flaticon.com/512/733/733609.png);
-  }
-  .dev {
-    background-image: url(https://raw.githubusercontent.com/gist/benhalpern/eff81b17359acafd17849146549b9291/raw/6de3cc24798bd3b133d4d89a1d87004c369eac46/dev-icon.svg);
-  }
-  .linkedin {
-    background-image: url(https://cdn-icons-png.flaticon.com/512/61/61109.png);
-  }
-  */
