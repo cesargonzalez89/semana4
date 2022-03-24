@@ -6,6 +6,16 @@
     --main-buttons-color: #585858;
     --square-buttons-color: #7ca9f7;
   }
+
+  /* latin */
+  @font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./pressstart2p.woff2) format('woff2');
+    
+  }
   
   .red {
     background-color: #ff0000;
