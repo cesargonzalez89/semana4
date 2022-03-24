@@ -38,7 +38,7 @@ const fetchPokemon = () =>{
         nameScreen.innerHTML = data.name;
         typeScreen.innerHTML = data.types[0].type.name;
         idScreen.innerHTML = `#${data.id}`;
-        aboutScreen.innerHTML = `Height: ${data.height * 10}cm Weight: ${
+        aboutScreen.innerHTML = `Altura: ${data.height * 10}cm Peso: ${
         data.weight / 10
         }kg`;
         inputField.value = '';
