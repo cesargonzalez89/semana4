@@ -28,7 +28,8 @@ const fetchPokemon = () =>{
     }).then((data) => {
         console.log(data);
         
-        let id = ('00' + data.id).slice(-3);
+        //let id = ('00' + data.id).slice(-3);
+        let id = data.id;
         let pokeImg = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`;
         //console.log(pokeImg);
         pokeImage(pokeImg);
