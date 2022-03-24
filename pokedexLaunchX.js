@@ -12,11 +12,11 @@ const fetchPokemon = () =>{
     fetch(url).then((res) => {
         //console.log(res);
         if(res.status!="200"){
-            console.log(res);
+            //console.log(res);
             nameScreen.innerHTML = "No encontrado";
             aboutScreen.innerHTML = "Sin informacion";
-            heightScreen.innerHTML = ``;
-            weightScreen.innerHTML = ``;
+            heightScreen.innerHTML = '';
+            weightScreen.innerHTML = '';
             document.getElementById("type1").style.backgroundImage = `url('')`;
             document.getElementById("type2").style.backgroundImage = `url('')`;
             inputField.value = '';
@@ -26,14 +26,13 @@ const fetchPokemon = () =>{
             return res.json();
         }        
     }).then((data) => {
-        console.log(data);
+        //console.log(data);
         
-        //let id = ('00' + data.id).slice(-3);
-        let id = data.id;
+        let id = ('00' + data.id).slice(-3);
         let pokeImg = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`;
         //console.log(pokeImg);
         pokeImage(pokeImg);
-        setDescription(id);
+        setDescription(data.id);
 
          // Set Type
          if(data.types.length > 0){
@@ -55,7 +54,7 @@ const fetchPokemon = () =>{
 //fetchPokemon();
 
 const pokeImage = (url) => {
-    console.log(url);
+    //console.log(url);
     const pokeImg = document.getElementById("pokeImg");
     pokeImg.src = url;
 }
@@ -73,17 +72,7 @@ inputField.addEventListener(
     (event) => event.key === 'Enter' && searchBtn.click()
   );
 
-//searchBtn.addEventListener('click', () => getPokemonData(inputField.value));
 searchBtn.addEventListener('click', () => fetchPokemon());
-
-
-
-
-
-
-
-
-
 
 function setDescription(numPokemon){
     fetch("https://pokeapi.co/api/v2/pokemon-species/" + numPokemon)
@@ -99,7 +88,7 @@ function setDescription(numPokemon){
   }
   
   function getAssetTypeEs(type){
-      console.log(type);
+      //console.log(type);
     switch(type){
       case 'normal':
         return './Tipo_normal.gif';
@@ -141,4 +130,3 @@ function setDescription(numPokemon){
         return './UnknownIC_Big.png';
     }
   }
-  
